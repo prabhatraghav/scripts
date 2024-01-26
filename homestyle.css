@@ -1,0 +1,30 @@
+body{
+  color: black;}
+  
+#blink_text0{	
+  animation-name:blink0;
+  width:580px;
+  animation-duration:1s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:Infinite;
+  }
+
+@keyframes blink0{
+  0%{color:red;}
+  50%{color:white;}
+  100%{color:red;}
+  }
+
+#blink_text1{	
+  animation-name:blink1;
+  width:580px;
+  animation-duration:3s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:Infinite;
+  }
+
+@keyframes blink1{
+  0%{color:magenta;}
+  50%{color:white;}
+  100%{color:magenta;}
+  }
