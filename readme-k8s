@@ -10,7 +10,7 @@ ls -l
 
 ################# IN the nodes ###############################
 
- wget https://raw.githubusercontent.com/akshu20791/Deployment-script/main/k8s-nodes.sh
+wget https://raw.githubusercontent.com/akshu20791/Deployment-script/main/k8s-nodes.sh
 ls
 ls -l
 chmod 777 k8s-nodes.sh
