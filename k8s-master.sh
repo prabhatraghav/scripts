@@ -32,17 +32,17 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ## Installing Calico (https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart)
 # Install the Tigera Calico operator and custom resource definitions
-kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/tigera-operator.yaml
+sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/tigera-operator.yaml
 
 #Install Calico by creating the necessary custom resource
-kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/custom-resources.yaml
+sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/custom-resources.yaml
 
 ## Confirm that all of the pods are running (Wait until each pod has the STATUS of Running)
 # watch kubectl get pods -n calico-system
 
 # Remove the taints on the control plane
-kubectl taint nodes --all node-role.kubernetes.io/control-plane-
-kubectl taint nodes --all node-role.kubernetes.io/master-
+#kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+#kubectl taint nodes --all node-role.kubernetes.io/master-
 
 # Confirm that you now have a node in your cluster
-kubectl get nodes -o wide
+sudo kubectl get nodes -o wide
