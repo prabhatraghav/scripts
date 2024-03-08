@@ -1,5 +1,5 @@
 ## Install Docker
-sudo wget https://raw.githubusercontent.com/prabhatraghav/devops-labs-scripts/master/scripts/installDocker.sh -P /tmp
+sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/latest-k8s-129/docker-engine.sh -P /tmp
 sudo chmod 755 /tmp/installDocker.sh
 sudo bash /tmp/installDocker.sh
 sudo systemctl restart docker.service
