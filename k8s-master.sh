@@ -38,7 +38,7 @@ kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/custom-resources.yaml
 
 ## Confirm that all of the pods are running (Wait until each pod has the STATUS of Running)
-watch kubectl get pods -n calico-system
+# watch kubectl get pods -n calico-system
 
 # Remove the taints on the control plane
 kubectl taint nodes --all node-role.kubernetes.io/control-plane-
