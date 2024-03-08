@@ -1,4 +1,6 @@
+# https://v1-28.docs.kubernetes.io/docs/setup/production-environment/container-runtimes/#cri-versions
 # https://docs.docker.com/engine/install/ubuntu/
+
 # Before you can install Docker Engine, you need to uninstall any conflicting packages
 # command to uninstall all conflicting packages
 sudo systemctl stop docker.socket
@@ -8,6 +10,7 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 sudo apt -y autoremove
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
+
 # install Docker Engine using the apt repository
 
 # Add Docker's official GPG key:
