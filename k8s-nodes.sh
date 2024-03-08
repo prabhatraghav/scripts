@@ -13,8 +13,6 @@ sudo systemctl restart cri-docker.service
 
 
 ## Install kubernetes
-
-
 sudo wget https://raw.githubusercontent.com/prabhatraghav/devops-labs-scripts/master/scripts/installK8S-v1-23.sh -P /tmp
 sudo chmod 755 /tmp/installK8S-v1-23.sh
 sudo bash /tmp/installK8S-v1-23.sh
