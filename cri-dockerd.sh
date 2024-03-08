@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# https://v1-28.docs.kubernetes.io/docs/setup/production-environment/container-runtimes/#cri-versions
+# https://github.com/Mirantis/cri-dockerd
+
 VER="0.3.11"
 
 install_linux() {
