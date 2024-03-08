@@ -6,7 +6,7 @@ sudo systemctl restart docker.service
 
 
 ## Install CRI-Docker
-sudo wget https://raw.githubusercontent.com/prabhatraghav/devops-labs-scripts/master/scripts/installCRIDockerd.sh -P /tmp
+sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/latest-k8s-129/cri-dockerd.sh -P /tmp
 sudo chmod 755 /tmp/installCRIDockerd.sh
 sudo bash /tmp/installCRIDockerd.sh
 sudo systemctl restart cri-docker.service
