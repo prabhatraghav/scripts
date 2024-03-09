@@ -1,5 +1,5 @@
-These k8s installation scripts are for Debian-based linux systems which uses 'apt-pacakage-manager' and are tested on Ubuntu-22.04 and Ubuntu-20.04.
 # Instructions to configure the multi-node K8s Cluster:
+These k8s installation scripts are for Debian-based linux systems which uses 'apt-pacakage-manager' and are tested on Ubuntu-22.04 and Ubuntu-20.04.
 
 # Run the following commands on master-node:
     sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/k8s-master-node.sh
