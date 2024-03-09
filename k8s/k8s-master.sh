@@ -5,7 +5,6 @@ sudo bash /tmp/docker-engine.sh
 sudo systemctl enable docker.service
 sudo systemctl restart docker.service
 
-
 ## Install and enable CRI-Docker CRI (Container Runtime Interface)
 sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/main/k8s/latest-k8s-129/cri-dockerd.sh -P /tmp
 sudo chmod 755 /tmp/cri-dockerd.sh
