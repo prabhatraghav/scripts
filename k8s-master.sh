@@ -49,3 +49,9 @@ sudo kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.
 
 # Confirm that you now have a node in your cluster
 sudo kubectl get nodes -o wide
+
+## To generate token in master-node and copy to all the worker-nodes
+## (Please integrate the CNI socket by pasting it within the generated token just after the "<master-node-IP>:6443 --cri-socker unix:///var/run/cri-dockerd.sock --token"):
+#sudo kubeadm token create --print-join-command
+echo "Please copy the below command as it is and paste it to all the worker-nodes to join the k8s-cluster:"
+echo "$(sudo kubeadm token create --print-join-command) --cri-socker unix:///var/run/cri-dockerd.sock"
