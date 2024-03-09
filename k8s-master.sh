@@ -21,7 +21,7 @@ sudo bash /tmp/install-k8s-v129.sh
 sudo swapoff -a
 
 ## Initialize kubernetes Master Node
-sudo kubeadm init --cri-socket unix:///var/run/cri-dockerd.sock --ignore-preflight-errors=all
+sudo kubeadm init --cri-socket unix:///var/run/cri-dockerd.sock #--ignore-preflight-errors=all
 
 ## Create a single-host Kubernetes cluster
 # sudo kubeadm init --pod-network-cidr=192.168.0.0/16
@@ -35,11 +35,11 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ## Installing Calico (https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart)
 # Install the Tigera Calico operator and custom resource definitions
-sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/tigera-operator.yaml
+#sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/tigera-operator.yaml
 
 #Install Calico by creating the necessary custom resource
-sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/custom-resources.yaml
-
+#sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/custom-resources.yaml
+sudo kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/calico.yaml
 ## Confirm that all of the pods are running (Wait until each pod has the STATUS of Running)
 # watch kubectl get pods -n calico-system
 
