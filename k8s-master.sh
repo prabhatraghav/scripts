@@ -43,7 +43,7 @@ sudo kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3
 ## Confirm that all of the pods are running (Wait until each pod has the STATUS of Running)
 # watch kubectl get pods -n calico-system
 
-# Remove the taints on the control plane
+# Remove the taints on the control plane (typically used in single-node cluster - it allow pods on master node)
 #kubectl taint nodes --all node-role.kubernetes.io/control-plane-
 #kubectl taint nodes --all node-role.kubernetes.io/master-
 
