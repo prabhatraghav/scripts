@@ -1,13 +1,13 @@
 # Instructions to configure the multi-node K8s Cluster:
 
 # Run the following commands on master-node:
-    sudo wget https://raw.githubusercontent.com/akshu20791/Deployment-script/main/k8s-master-node.sh
+    sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/k8s-master-node.sh
     sudo chmod 777 k8s-master-node.sh
     sudo sh k8s-master-node.sh
 
 
 # Run the following commands on all the worker-nodes:
-    sudo wget https://raw.githubusercontent.com/akshu20791/Deployment-script/main/k8s-worker-nodes.sh
+    sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/k8s-worker-nodes.sh
     sudo chmod 777 k8s-worker-nodes.sh
     sudo sh k8s-worker-nodes.sh
 
