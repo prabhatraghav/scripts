@@ -22,4 +22,8 @@ sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/main/k8s/lates
 sudo chmod 755 /tmp/start-k8s-cluster.sh
 sudo bash /tmp/start-k8s-cluster.sh
 
-#sudo rm -r k8s-master-node.sh
+sudo rm -r /tmp/docker-engine.sh
+sudo rm -r /tmp/cri-dockerd.sh
+sudo rm -r /tmp/install-k8s-v129.sh
+sudo rm -r /tmp/start-k8s-cluster.sh
+sudo rm -r k8s-master-node.sh
