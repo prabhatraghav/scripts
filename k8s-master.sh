@@ -57,6 +57,6 @@ sudo kubectl get nodes -o wide
 ## To generate token in master-node and copy to all the worker-nodes
 ## (Please integrate the CNI socket by pasting it within the generated token just after the "<master-node-IP>:6443 --cri-socker unix:///var/run/cri-dockerd.sock --token"):
 #sudo kubeadm token create --print-join-command
-echo "Please copy the below command as it is and paste it to all the worker-nodes to join the k8s-cluster:"
+echo "Please copy and paste the below command to all the worker-nodes to join the k8s-cluster (use it with "sudo" if u r not a root user):"
 sudo kubeadm token create --print-join-command | sed "s#:6443#& --cri-socker unix:///var/run/cri-dockerd.sock#"
 ## echo "sudo $(sudo kubeadm token create --print-join-command) --cri-socker unix:///var/run/cri-dockerd.sock"
