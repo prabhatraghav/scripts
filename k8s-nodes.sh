@@ -16,3 +16,5 @@ sudo systemctl restart cri-docker.service
 sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/latest-k8s-129/install-k8s-v129.sh -P /tmp
 sudo chmod 755 /tmp/install-k8s-v129.sh
 sudo bash /tmp/install-k8s-v129.sh
+
+sudo rm -r /tmp/*.sh
