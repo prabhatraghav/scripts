@@ -1,4 +1,4 @@
-# Instructions to configure the Kubernetes Cluster:
+# Instructions to configure the multi-node K8s Cluster:
 
 # Run the following commands on master-node:
     sudo wget https://raw.githubusercontent.com/akshu20791/Deployment-script/main/k8s-master-node.sh
