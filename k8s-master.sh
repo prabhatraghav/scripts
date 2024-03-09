@@ -18,6 +18,12 @@ sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main
 sudo chmod 755 /tmp/install-k8s-v129.sh
 sudo bash /tmp/install-k8s-v129.sh
 
+## Initialise the k8s-cluster on master-node
+sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/latest-k8s-129/start-k8s-cluster.sh -P /tmp
+sudo chmod 755 /tmp/start-k8s-cluster.sh
+sudo bash /tmp/start-k8s-cluster.sh
+
+/*
 sudo swapoff -a
 
 ## Initialize kubernetes Master Node
@@ -60,3 +66,4 @@ sudo kubectl get nodes -o wide
 echo "Please copy and paste the below command to all the worker-nodes to join the k8s-cluster (use it with "sudo" if u r not a root user):"
 sudo kubeadm token create --print-join-command | sed "s#:6443#& --cri-socket unix:///var/run/cri-dockerd.sock#"
 ## echo "sudo $(sudo kubeadm token create --print-join-command) --cri-socket unix:///var/run/cri-dockerd.sock"
+*/
