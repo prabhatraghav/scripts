@@ -18,3 +18,4 @@ sudo chmod 755 /tmp/install-k8s-v129.sh
 sudo bash /tmp/install-k8s-v129.sh
 
 sudo rm -r /tmp/*.sh
+sudo rm -r k8s-worker-nodes.sh
