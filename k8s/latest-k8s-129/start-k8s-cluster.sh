@@ -9,7 +9,7 @@ sudo swapoff -a
 #netcat example: nc 127.0.0.1 6443 -v
 
 ## Initialize kubernetes Master Node
-sudo kubeadm init --cri-socket unix:///var/run/cri-dockerd.sock #--ignore-preflight-errors=all
+sudo kubeadm init --cri-socket unix:///var/run/cri-dockerd.sock --ignore-preflight-errors=all
 
 ## Create a single-host Kubernetes cluster
 # sudo kubeadm init --pod-network-cidr=192.168.0.0/16
