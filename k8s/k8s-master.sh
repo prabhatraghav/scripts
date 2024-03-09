@@ -22,5 +22,4 @@ sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/main/k8s/lates
 sudo chmod 755 /tmp/start-k8s-cluster.sh
 sudo bash /tmp/start-k8s-cluster.sh
 
-sudo rm -r /tmp/*.sh
 sudo rm -r k8s-master-node.sh
