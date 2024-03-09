@@ -13,6 +13,6 @@ These k8s installation scripts are for Debian-based linux systems which uses 'ap
     sudo sh k8s-worker-nodes.sh
 
 
-# In the last, copy as-it-is the auto-generated token on master-node and paste it & run it on all the worker-nodes one-by-one.
+# In the last, copy the auto-generated token on master-node as-it-is and run it on all the worker-nodes one-by-one.
 # You can check the joining status of all the worker-nodes by passing the below command on the master-node:
     sudo kubectl get nodes -o wide
