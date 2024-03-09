@@ -48,8 +48,3 @@ sudo kubectl get nodes -o wide
 echo "Please copy and paste the below command to all the worker-nodes to join the k8s-cluster (use it with "sudo" if u r not a root user):"
 sudo kubeadm token create --print-join-command | sed "s#:6443#& --cri-socket unix:///var/run/cri-dockerd.sock#"
 ## echo "sudo $(sudo kubeadm token create --print-join-command) --cri-socket unix:///var/run/cri-dockerd.sock"
-
-#sudo rm -r /tmp/docker-engine.sh
-#sudo rm -r /tmp/cri-dockerd.sh
-#sudo rm -r /tmp/install-k8s-v129.sh
-#sudo rm -r /tmp/start-k8s-cluster.sh
