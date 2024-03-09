@@ -1,3 +1,8 @@
+## The default behavior of a kubelet was to fail to start if swap memory was detected on a node.
+# Swap has been supported since v1.22. And since v1.28, Swap is supported for cgroup v2 only.
+# You MUST disable swap if the kubelet is not properly configured to use swap.
+# 'sudo swapoff -a' will disable swapping temporarily. To make this change persistent across reboots,
+# make sure swap is disabled in config files. like /etc/fstab, systemd.swap, depending how it was configured on your system.
 sudo swapoff -a
 
 ## You can use tools like netcat to check if a port is open.
