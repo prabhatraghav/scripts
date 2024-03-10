@@ -1,6 +1,6 @@
 # https://v1-28.docs.kubernetes.io/docs/setup/production-environment/container-runtimes/#cri-versions
 # https://docs.docker.com/engine/install/ubuntu/
-
+sudo apt update -y
 # Before you can install Docker Engine, you need to uninstall any conflicting packages
 # command to uninstall all conflicting packages
 sudo systemctl stop docker.socket
