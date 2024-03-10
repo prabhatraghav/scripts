@@ -8,4 +8,5 @@ curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack
 # Kustomize targets kubernetes; it understands and can patch kubernetes style API objects. It’s like make, in that what it does is declared in a file, and it’s like sed, in that it emits edited text.
 
 # Example of kustomize for google/cAdvisor as k8s DaemonSet deployment.
-# Example: https://github.com/prabhatraghav/cadvisor_by_google/tree/master/deploy/kubernetes/base
+# Example1: https://github.com/prabhatraghav/cadvisor_by_google/tree/master/deploy/kubernetes/base
+# Example2: https://www.kubecost.com/kubernetes-devops-tools/cadvisor/
