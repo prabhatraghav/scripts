@@ -1,3 +1,5 @@
+sudo apt update -y
+
 ## Install and enable Docker engine
 sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/main/k8s/latest-k8s-129/docker-engine.sh -P /tmp
 sudo chmod 755 /tmp/docker-engine.sh
