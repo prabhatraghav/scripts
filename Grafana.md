@@ -20,6 +20,7 @@ Installs the latest Grafana Enterprise release:
     sudo apt-get install grafana-enterprise
 
 Uninstall on Debian or Ubuntu
+
     sudo systemctl stop grafana-server
     sudo service grafana-server stop
     sudo apt-get remove grafana && sudo apt-get remove grafana-enterprise
