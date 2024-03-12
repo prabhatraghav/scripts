@@ -1,4 +1,5 @@
-# APT/YUM repository for Grafana stable releases
+APT/YUM repository for Grafana stable releases
+
     https://apt.grafana.com/
 
 https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
