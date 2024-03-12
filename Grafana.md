@@ -3,7 +3,7 @@
 
 https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
 
-# FOR apt package manager - Debian/Ubuntu 
+# For apt-package-manager - Debian/Ubuntu 
     sudo apt-get install -y apt-transport-https software-properties-common wget
     sudo mkdir -p /etc/apt/keyrings/
     wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
@@ -19,11 +19,11 @@ Installs the latest Grafana Enterprise release:
 
     sudo apt-get install grafana-enterprise
 
-
-
-
-
-
+# Uninstall on Debian or Ubuntu
+sudo systemctl stop grafana-server
+sudo service grafana-server stop
+sudo apt-get remove grafana
+sudo rm -i /etc/apt/sources.list.d/grafana.list
 
 
 
