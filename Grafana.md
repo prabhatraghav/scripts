@@ -1,5 +1,5 @@
-## APT/YUM repository for Grafana stable releases
-## https://apt.grafana.com/
+// APT/YUM repository for Grafana stable releases
+/* https://apt.grafana.com/
 
 
 
