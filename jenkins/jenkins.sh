@@ -1,5 +1,5 @@
 # For UBUNTU 22.04 - EC2-INSTANCE: Atleast minimum 2GB RAM + 2vCPUs - will be required to work Jenkins smoothly.
-# sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/edit/master/jenkins/jenkins.sh
+# sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/jenkins/jenkins.sh
 # sudo chmod +x jenkins.sh
 # sudo sh jenkins.sh
 
