@@ -1,5 +1,5 @@
 # For UBUNTU (tested on Ubuntu-22.04-LTS / Ubuntu-24.04-LTS)
-# sudo wget https://raw.githubusercontent.com/prabhatraghav/Deployment-script/main/ansible.sh
+# sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/master/ansible.sh
 # sudo chmod +x ansible.sh
 # sudo sh ansible.sh
 
