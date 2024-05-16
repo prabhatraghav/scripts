@@ -1,5 +1,5 @@
 # For UBUNTU (tested on Ubuntu-22.04-LTS/Ubuntu-24.04-LTS)
-# sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/master/docker.sh
+# sudo wget --header="Authorization: token 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" -O jenkins.sh "https://raw.githubusercontent.com/prabhatraghav/scripts/master/docker.sh"
 # sudo chmod +x docker.sh
 # sudo sh docker.sh
 
