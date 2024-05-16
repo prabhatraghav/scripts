@@ -1,5 +1,5 @@
-# For UBUNTU (tested on Ubuntu 22.04 LTS jammy / Ubuntu 24.04 LTS noble) - EC2-INSTANCE: Atleast minimum 2GB RAM + 2vCPUs - will be required to work Jenkins smoothly.
-# sudo wget https://raw.githubusercontent.com/prabhatraghav/scripts/master/gcp-cicd.sh
+# For UBUNTU (tested on Ubuntu-22.04-LTS-jammy / Ubuntu-24.04-LTS-noble) - EC2-INSTANCE: Atleast minimum 2GB RAM + 2vCPUs - will be required to work Jenkins smoothly.
+# sudo wget --header="Authorization: token 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" -O jenkins.sh "https://raw.githubusercontent.com/prabhatraghav/scripts/master/gcp-cicd.sh"
 # sudo chmod +x gcp-cicd.sh
 # sudo sh gcp-cicd.sh
 
