@@ -62,7 +62,6 @@ echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main |
 sudo apt-get update -y
 sudo apt-get install trivy -y
 
-
 # Install the gcloud CLI - https://cloud.google.com/sdk/docs/install
 sudo apt-get install apt-transport-https ca-certificates gnupg curl -y
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
