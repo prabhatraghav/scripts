@@ -22,7 +22,7 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 cat /var/lib/jenkins/secrets/initialAdminPassword
 
-# Add Docker's official GPG key:
+# Installing Docker Engine:
 sudo apt-get install ca-certificates curl -y
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
@@ -54,6 +54,14 @@ sudo apt install software-properties-common -y
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt update -y
 sudo apt install ansible -y
+
+# Installing Trivy
+sudo apt-get install wget apt-transport-https gnupg lsb-release -y
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+sudo apt-get update -y
+sudo apt-get install trivy -y
+
 
 # Install the gcloud CLI - https://cloud.google.com/sdk/docs/install
 sudo apt-get install apt-transport-https ca-certificates gnupg curl -y
