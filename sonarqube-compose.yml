@@ -2,7 +2,7 @@
 # sudo wget --header="Authorization: token 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" -O docker-compose.yml "https://raw.githubusercontent.com/prabhatraghav/scripts/master/sonarqube-compose.yml"
 # docker compose up
 
-version: "3"
+#version: "3"
 
 services:
   sonarqube:
