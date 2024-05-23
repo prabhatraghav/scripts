@@ -21,6 +21,7 @@ services:
     ports:
       - "9000:9000"
     restart: always
+  
   db:
     image: postgres:12
     container_name: sonar_db
