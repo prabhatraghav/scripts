@@ -1,5 +1,5 @@
 # For UBUNTU (tested on Ubuntu-22.04-LTS/Ubuntu-24.04-LTS)
-# sudo wget --header="Authorization: token gxp_Lif5hKpFtxxEcwcz1eHtu" -O docker.sh "https://raw.githubusercontent.com/prabhatraghav/scripts/master/docker.sh"
+# sudo wget --header="Authorization: token gxp_Lif5hKpFtxxxxxxEcwcz1eHtu" -O docker.sh "https://raw.githubusercontent.com/prabhatraghav/scripts/master/docker.sh"
 # sudo chmod +x docker.sh
 # sudo sh docker.sh
 
